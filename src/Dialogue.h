@@ -1,16 +1,12 @@
 #pragma once
 
-#include <string>
+// #include <string>
 
 
-void mainMenu()
-{
-    std::cout << 
-}
 
 // void actOne()
 // {
-
+        // Introduce the player and establish the scene / environment
 // }
 
 // void actTwo()

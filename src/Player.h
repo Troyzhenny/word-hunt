@@ -29,6 +29,14 @@ enum class Shelter
     Stone
 };
 
+enum class MenuOption
+{
+    NEW_GAME,
+    CONTINUE,
+    CREDITS
+};
+
+
 class Player
 {
     private:
@@ -40,12 +48,14 @@ class Player
         std::string getName() const;
 
         void addItem(const std::string& item);
+
+        void handleMenuOption(MenuOption option);
 };
 
 
 /*TODO*
-    [] Level system
+    [] Level system (story based leveling)
+    [] Story progression (tied to dialogue and the script)
     [] stats that increase
-    [] Story progression
     [] unlockable items [no unlocakble areas, whole island is accesible and open world]
 */
