@@ -10,7 +10,6 @@ set(CMAKE_CXX_EXTENSIONS OFF) # Helps cross compilation/portability
 add_executable(Stranded
     src/main.cpp
     src/Player.cpp
-    src/Dialogue.cpp
     src/GameLayout.cpp
 )
 
