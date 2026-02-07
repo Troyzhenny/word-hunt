@@ -1,22 +1,22 @@
-#include <iostream>
-#include "terminal_colors.h"
+// #include <iostream>
+// #include "terminal_colors.h"
+#include "GameState.h"
 #include "Player.h"
-#include "GameLayout.h"
+// #include "GameFlow.h"
+
 
 int main()
 {
-    mainMenu();
-    startGame();
+    // GameState currentState = GameState::MAIN_MENU; // so player sees this on initial game boot then we use a switch statement to switch states
+
+    // while (currentState != GameState::QUIT_GAME)
+    // {
+    //     // do stuff with switch statement
+    // }
 
     Player player;
-    std::string name;
 
-    std::cout << LIGHT_YELLOW << "Enter your name: " << RESET << std::endl;
-    std::cin>> name;
-
-    player.setName(name);
-
-    std::cout << LIGHT_PURPLE << "Hello, " << player.getName() << "!" << RESET << std::endl;
+    rollCredits();
 
     return 0;
 }
